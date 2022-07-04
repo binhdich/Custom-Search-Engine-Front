@@ -18,7 +18,7 @@
     dataArray.append("indexUrl", urlVar);
 	dataArray.append("indexName", idxNameVar);
 
-    fetch("http://127.0.0.1:5000/indexurl", {
+    fetch("https://custom-search-lib.herokuapp.com/indexurl", {
       method: "POST",
       body:  dataArray
     })
@@ -42,7 +42,7 @@
     	dataArray.append("searchTerm", searchVar);
 		dataArray.append("searchIndexName", searchIdxVar);
 		
-    	fetch('http://127.0.0.1:5000/search',{
+    	fetch('https://custom-search-lib.herokuapp.com/search',{
      	 method: "POST",
      	 body:  dataArray
     })
